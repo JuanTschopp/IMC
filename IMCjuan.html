@@ -106,16 +106,22 @@
 
             if (imc < 18.5) {
                 mensaje = 'Estás por debajo del peso normal.';
+                imagen  = 
             } else if (imc >= 18.5 && imc < 24.9) {
+                
                 mensaje = 'Estás en un peso normal.';
             } else if (imc >= 25 && imc < 29.9) {
+                imagen  = 
                 mensaje = 'Estás con sobrepeso.';
             } else if (imc >= 30 && imc < 34.9) {
+                imagen  = 
                 mensaje = 'Tienes obesidad grado 1.';
             } else if (imc >= 35 && imc < 39.9) {
+                imagen = '
                 mensaje = 'Tienes obesidad grado 2.';
             } else {
                 mensaje = 'Tienes obesidad grado 3 (obesidad mórbida).';
+                imagen  =
             }
 
             resultadoDiv.textContent = `Tu IMC es ${imc.toFixed(2)}. ${mensaje}`;
@@ -126,3 +132,4 @@
 
 </body>
 </html>
+
