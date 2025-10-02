@@ -85,7 +85,7 @@
     </form>
 
     <div class="resultado" id="resultado"></div>
-
+     <img src="" id="foto">
     <script>
         document.getElementById('formIMC').addEventListener('submit', function(event) {
             event.preventDefault();
@@ -123,7 +123,7 @@
                 mensaje = 'Tienes obesidad grado 3 (obesidad mórbida).';
                 imagen  = './img/obesidadgrado3.jpg
             }
-
+            foto.src = imagen;
             resultadoDiv.textContent = `Tu IMC es ${imc.toFixed(2)}. ${mensaje}`;
             resultadoDiv.style.backgroundColor = '#d1e7dd';
             resultadoDiv.style.color = '#0f5132';
@@ -132,5 +132,6 @@
 
 </body>
 </html>
+
 
 
